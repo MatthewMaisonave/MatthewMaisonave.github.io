@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Include the head content -->
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+  <body>
+    <!-- Include the browser upgrade message -->
+    {% include browser-upgrade.html %}
+    <!-- Include the masthead -->
+    {% include masthead.html %}
+    <!-- Main content goes here -->
+    <!-- Include the footer -->
+    <div class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include footer.html %}
+      </footer>
+    </div>
+    <!-- Include the scripts -->
+    {% include scripts.html %}
+  </body>
+</html>
