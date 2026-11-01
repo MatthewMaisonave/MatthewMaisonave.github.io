@@ -1,0 +1,45 @@
+/* Scoped portfolio styling; safe to add to the existing Academic Pages theme. */
+.mm-portfolio { --mm-ink:#17243b; --mm-muted:#526277; --mm-border:#dde4ed; --mm-soft:#f6f9fc; --mm-accent:#183c65; color:inherit; }
+.mm-portfolio *, .mm-portfolio *::before, .mm-portfolio *::after { box-sizing:border-box; }
+.mm-hero { padding:1.25rem 0 1.9rem; border-bottom:1px solid var(--mm-border); }
+.mm-hero .mm-kicker { margin:0 0 .65rem; color:#30618b; font-size:.73rem; letter-spacing:.14em; font-weight:750; }
+.mm-hero .mm-lead { font-size:1.15rem; line-height:1.68; font-weight:480; }
+.mm-hero p { max-width:65ch; }
+.mm-actions { display:flex; flex-wrap:wrap; align-items:center; gap:.65rem; margin:1.4rem 0 1.1rem; }
+.mm-button { display:inline-flex; align-items:center; justify-content:center; padding:.62rem .95rem; font-size:.88rem; font-weight:650; border-radius:7px; text-decoration:none !important; border:1px solid #8da5bd; transition:background .15s ease; }
+.mm-button-primary, .mm-button-primary:visited { background:#1b416c; border-color:#1b416c; color:#fff !important; }
+.mm-button-primary:hover { background:#102a49; border-color:#102a49; color:#fff !important; }
+.mm-button-secondary, .mm-button-secondary:visited { color:#1b416c !important; background:#fff; }
+.mm-button-secondary:hover { background:#eff5fa; }
+.mm-note { color:var(--mm-muted); font-size:.82rem; }
+.mm-section { padding:1.35rem 0 1rem; border-bottom:1px solid var(--mm-border); }
+.mm-section h2 { margin-top:.25rem; font-size:1.45rem; }
+.mm-section-heading p { color:var(--mm-muted); margin-top:-.4rem; }
+.mm-grid { display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:.9rem; margin:1.1rem 0; }
+.mm-card { padding:1rem 1.1rem .95rem; border:1px solid var(--mm-border); border-radius:10px; background:var(--mm-soft); min-width:0; }
+.mm-card h3 { font-size:1.04rem; margin:.2rem 0 .58rem; line-height:1.4; }
+.mm-card p { font-size:.89rem; line-height:1.58; margin:.45rem 0; }
+.mm-card .mm-label { font-size:.67rem; font-weight:750; letter-spacing:.1em; color:#36658c; }
+.mm-card .mm-result { margin-top:1rem; border-top:1px solid var(--mm-border); padding-top:.7rem; }
+.mm-card code { font-size:.82em; overflow-wrap:anywhere; }
+.mm-section-link, .mm-publications { font-size:.93rem; }
+.mm-entry { display:flex; justify-content:space-between; align-items:baseline; gap:1rem; margin-top:1.1rem; }
+.mm-entry h3 { font-size:1rem; margin:0; }
+.mm-entry span { font-size:.84rem; color:var(--mm-muted); }
+.mm-entry .mm-date { flex-shrink:0; white-space:nowrap; }
+.mm-publications { padding-left:1.4rem; }
+.mm-publications li { margin:.7rem 0; padding-left:.2rem; }
+.mm-contact { border-bottom:0; }
+@media (max-width:680px) {
+ .mm-grid { grid-template-columns:1fr; }
+ .mm-entry { display:block; }
+ .mm-entry .mm-date { display:block; margin-top:.25rem; }
+ .mm-hero .mm-lead { font-size:1.04rem; }
+ .mm-actions .mm-button { width:100%; }
+}
+@media (prefers-color-scheme:dark) {
+ .mm-portfolio { --mm-border:#384657; --mm-soft:#202936; --mm-muted:#b3c0d0; }
+ .mm-hero .mm-kicker,.mm-card .mm-label { color:#a4c8e8; }
+ .mm-button-secondary,.mm-button-secondary:visited { background:#263547; color:#e1eef9 !important; border-color:#8da5bd; }
+ .mm-button-secondary:hover { background:#31475d; }
+}
